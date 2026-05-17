@@ -37,9 +37,32 @@ The project tests and evaluates several regression algorithms to find the most a
 **Target Variable:** `Target_GA_per90` (2025-2026 Season)  
 **Evaluation Metric:** **Mean Absolute Error (MAE)**. The model evaluates its accuracy by projecting the predicted G+A/90 across the player's actual minutes played to find how many total Goals/Assists the model was off by on average.
 
-## 🚀 How to Run Locally
+# How to Run the Football Player Future G/A Predictor Locally
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/yourusername/football-ga-predictor.git](https://github.com/yourusername/football-ga-predictor.git)
-   cd football-ga-predictor
+Follow these steps to set up your environment, train the machine learning models, and generate future player performance projections on your machine.
+
+### Step 1: Clone the Repository
+Open your terminal or command prompt and clone the project repository:
+git clone https://github.com/yourusername/football-ga-predictor.git
+cd football-ga-predictor
+
+### Step 2: Install Required Python Libraries
+Install all the data processing, scaling, and machine learning packages needed by running:
+pip install pandas numpy scikit-learn xgboost jupyter
+
+### Step 3: Organize the Datasets
+1. Inside your project folder, create a new folder named exactly: data
+2. Download your Kaggle files and place them inside that /data folder. 
+   Your directory structure should look like this:
+   └── football-ga-predictor/
+       ├── player_GA_ml.ipynb
+       └── data/
+           ├── football-data_23-24.csv
+           ├── football-data_24-25.csv
+           └── football-data_25-26.csv
+
+### Step 4: Launch and Run the Jupyter Notebook
+Start the local Jupyter notebook environment with this command:
+jupyter notebook
+
+This will open a tab in your web browser. Click on 'player_GA_ml.ipynb', and you can run the code cells sequentially from top to bottom to clean the data, train the Poisson Regressor, and view the top player projections!
