@@ -37,7 +37,6 @@ The project tests and evaluates several regression algorithms to find the most a
 **Target Variable:** `Target_GA_per90` (2025-2026 Season)  
 **Evaluation Metric:** **Mean Absolute Error (MAE)**. The model evaluates its accuracy by projecting the predicted G+A/90 across the player's actual minutes played to find how many total Goals/Assists the model was off by on average.
 
----
 
 # How to Run the Football Player Future G/A Predictor Locally
 
