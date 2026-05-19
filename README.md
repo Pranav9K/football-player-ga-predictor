@@ -53,7 +53,8 @@ pip install pandas numpy scikit-learn xgboost matplotlib seaborn jupyter
 
 ### Step 3: Organize the Datasets
 1. Inside your project folder, create a new folder named exactly: data
-2. Download your Kaggle files and place them inside that /ModelData folder. 
+2. Download your Kaggle files and place them inside that /ModelData folder.
+ 
    Your directory structure should look like this:
    └── football-ga-predictor/
        ├── player_GA_ml.ipynb
